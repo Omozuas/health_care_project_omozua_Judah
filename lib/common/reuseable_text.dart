@@ -9,7 +9,7 @@ class ReuseableText extends StatelessWidget {
     return Text(
       text,
       softWrap: true,
-      textAlign: TextAlign.center,
+      textAlign: TextAlign.start,
       overflow: TextOverflow.ellipsis,
       style: style,
     );

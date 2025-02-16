@@ -1,7 +1,6 @@
-import 'package:automatedcountingapp/views/auth_screen/login_screen.dart';
+import 'package:automatedcountingapp/views/user_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -14,9 +13,9 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return GetMaterialApp(
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: "Automated Counting",
+          title: "List of users",
           themeMode: ThemeMode.system,
           home: mainHome,
           navigatorKey: navigatorKey,
@@ -26,4 +25,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Widget mainHome = const LoginScreen();
+Widget mainHome = const UserScreen();
