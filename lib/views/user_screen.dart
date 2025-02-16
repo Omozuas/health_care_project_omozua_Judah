@@ -1,4 +1,4 @@
-import 'package:automatedcountingapp/api/river_pod/user_river_pod.dart';
+import 'package:automatedcountingapp/api/river_pod/user_provider.dart';
 import 'package:automatedcountingapp/common/app_style.dart';
 import 'package:automatedcountingapp/common/reuseable_text.dart';
 import 'package:automatedcountingapp/theme/constants.dart';

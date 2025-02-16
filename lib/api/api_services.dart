@@ -22,11 +22,11 @@ class ApiService {
       }
       return response;
     } on SocketException {
-      throw Exception("No Internet connection. Please check your network.");
+      throw "No Internet connection. Please check your network.";
     } on TimeoutException {
-      throw Exception("Request timed out. Try again later.");
+      throw "Request timed out. Try again later.";
     } catch (e) {
-      throw Exception("Unexpected error: $e");
+      throw "Something went wrong. Please try again";
     }
   }
 }
